@@ -1,0 +1,25 @@
+import java.util.*;
+class Prime
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int n=sc.nextInt();
+        int i,j,a=0,flag=0;
+        for(i=n;a!=50;i++)
+        {
+            for(j=2;j<i;j++)
+            {
+                if(i%j==0)
+                flag=1;
+            }
+            if(flag==0)
+            {
+                System.out.println(i+" ");
+                a+=1;
+            }
+            flag=0;
+        }
+    }
+}
